@@ -6,10 +6,43 @@
     <script src = 'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js'>
     </script>
     <body ng-controller='MainController as vm'>
-        <section class = 'section-tours' id='section-tours'>
+        <header class='header'>
+            <div class = 'header__text-box'>
+                <h1 class ='heading-primary'>
+                    <span class = 'heading-primary--main'> TAROT</span>
+                    <span class = 'heading-primary--sub'> is what life's meaning</span>
+                </h1>
+                <a href = '#section-major-tarots' class = 'btn btn--white btn-animiated'> MAJOR ARCANA</a>
+        </div>
+        </header>
+        <section class = 'section-features'>
+            <div class = 'row'>
+                <div class = 'col-1-of-4'>
+                    <div class = 'feature-box'>
+                        <a href = '#section-major-tarots' class = 'btn--white heading-tertiary u-margin-bottom-small'> WANDS </h3>
+                    </div>
+                </div>
+                <div class = 'col-1-of-4'>
+                    <div class = 'feature-box'>
+                        <a href = '#section-major-tarots' class = 'btn--white heading-tertiary u-margin-bottom-small'> CUPS </h3>
+                    </div>
+                </div>
+                <div class = 'col-1-of-4'>
+                    <div class = 'feature-box'>
+                        <a href = '#section-major-tarots' class = 'btn--white heading-tertiary u-margin-bottom-small'> SWORDS </h3>
+                    </div>
+                </div>
+                <div class = 'col-1-of-4'>
+                    <div class = 'feature-box'>
+                        <a href = '#section-major-tarots' class = 'btn--white heading-tertiary u-margin-bottom-small'> COINS </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class = 'section-major-tarots' id='section-major-tarots'>
                 <div class = 'u-center-text u-margin-bottom-big'>
                     <h2 class = 'heading-secondary'>
-                        TAROT CARDS
+                        MAJOR ARCANA
                     </h2>
                 </div>
                 <div class = 'row' ng-repeat = 'k in vm.range(vm.rowArrayLen) track by $index'>
