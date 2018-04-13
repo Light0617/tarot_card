@@ -1,0 +1,46 @@
+<html ng-app = 'myApp'>
+    <head></head>
+    <link href ="/assets/css/style.css" type="text/css"
+        rel="stylesheet"/>
+    <script src='https://code.jquery.com/jquery-1.11.3.min.js'/></script>
+    <script src = 'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js'>
+    </script>
+    <body ng-controller='MainController as vm'>
+        <section class = 'section-tours' id='section-tours'>
+                <div class = 'u-center-text u-margin-bottom-big'>
+                    <h2 class = 'heading-secondary'>
+                        TAROT CARDS
+                    </h2>
+                </div>
+                <div class = 'row' ng-repeat = 'k in vm.range(vm.rowArrayLen) track by $index'>
+                    <div class = 'col-1-of-4' ng-repeat='card in vm.cards.slice(4*$index, 4*$index+4);'>
+                        <div class = 'card'>
+                            <div class = 'card__side card__side--front'>
+                                <div class = 'card__picture card__picture--{{card.title}} '>
+                                    &nbsp;
+                                </div>
+                                <h4 class = 'card__heading'>
+                                    <span class = 'card__heading-span card__heading-span--{{$index + 1}}'>
+                                        {{card.name}}
+                                    </span>
+                                </h4>
+                            </div>
+                            <div class = 'card__side card__side--back card__side--back-{{$index + 1}}'>
+                                <div class = 'card__picture card__picture--{{card.title}}--back'>
+                                    &nbsp;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = 'u-center-text u-margin-top-huge'>
+                    <a href='#' class='btn btn--green'>Dicover all cards</a>
+                </div>
+            </section>
+        <script>
+            var clientCard = <%- JSON.stringify(serverCard)%>;
+        </script>
+        <script src='/assets/js/tarot.js'></script>
+    </body>
+</html>
