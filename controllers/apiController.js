@@ -7,11 +7,30 @@ app.set('view engine', 'ejs');
 module.exports = function(app){
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true}));
+
     app.get('/api/tarots/', function(req, res){
-        Tarots.find({}).sort('card_id').exec(function(err, tarots){
+        Tarots.find({'type' : 'Major'}).sort('card_id').exec(function(err, CardMajors){
             if(err) throw err;
-            //res.send(tarots);
-            res.render('index', {serverCard : tarots});
+            Tarots.find({'type' : 'wand'}).sort('card_id').exec(function(err, CardWands){
+                if(err) throw err;
+                Tarots.find({'type' : 'cup'}).sort('card_id').exec(function(err, CardCups){
+                    if(err) throw err;
+                    Tarots.find({'type' : 'sword'}).sort('card_id').exec(function(err, CardSwords){
+                        if(err) throw err;
+                        Tarots.find({'type' : 'pentacles'}).sort('card_id').exec(function(err, CardPentacless){
+                            if(err) throw err;
+                            cardTypes = ['MAJOR ARCANA', 'wand', 'cup', 'sword', 'pentacles'];
+                            res.render('index', {
+                                                serverCardMajors : CardMajors,
+                                                serverCardWands: CardWands,
+                                                serverCardCups: CardCups,
+                                                serverCardSwords: CardSwords,
+                                                serverCardPentacless: CardPentacless,
+                                                serverCardTypes: cardTypes});
+                        });
+                    });
+                });
+            });
         });
     });
 

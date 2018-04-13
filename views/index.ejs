@@ -16,40 +16,23 @@
         </header>
         <section class = 'section-features'>
             <div class = 'row'>
-                <div class = 'col-1-of-4' onclick="window.location = '#section-wand'">
-                    <div class = 'feature-box' >
-                        <img src="/assets/img/main/wand.svg" width='50%'/>
-                        <h3 class = 'heading-tertiary u-margin-bottom-small'> wand </h3>
+                    <div ng-repeat="type in vm.cardTypes.slice(1, 5);" class = 'col-1-of-4' ng-click="vm.go_href(type)">
+                        <div class = 'feature-box'>
+                            <img src="/assets/img/main/{{type}}.svg" width='50%'/>
+                            <h3 class = 'heading-tertiary u-margin-bottom-small'> {{type}} </h3>
+                        </div>
                     </div>
-                </div>
-                <div class = 'col-1-of-4'>
-                    <div class = 'feature-box' onclick="window.location = '#section-cup'">
-                        <img src="/assets/img/main/cup.svg" width='50%'/>
-                        <h3 class = 'heading-tertiary u-margin-bottom-small'> cup </h3>
-                    </div>
-                </div>
-                <div class = 'col-1-of-4'>
-                    <div class = 'feature-box' onclick="window.location = '#section-sword'">
-                        <img src="/assets/img/main/sword.svg" width='50%'/>
-                        <h3 class = 'heading-tertiary u-margin-bottom-small'> sword </h3>
-                    </div>
-                </div>
-                <div class = 'col-1-of-4'>
-                    <div class = 'feature-box' onclick="window.location = '#section-coin'">
-                        <img src="/assets/img/main/coins.svg" width='50%'/>
-                        <h3 class = 'heading-tertiary u-margin-bottom-small'> coin </h3>
-                    </div>
-                </div>
             </div>
         </section>
+
         <section class = 'section-tarots' id='section-major-tarots'>
             <div class = 'u-center-text u-margin-bottom-big'>
                 <h2 class = 'heading-secondary'>
                     MAJOR ARCANA
                 </h2>
             </div>
-            <div class = 'row' ng-repeat = 'k in vm.range(vm.rowArrayLen) track by $index'>
-                <div class = 'col-1-of-4' ng-repeat='card in vm.cards.slice(4*$index, 4*$index+4);'>
+            <div class = 'row' ng-repeat = 'k in vm.range(vm.rowMajorArrayLen) track by $index'>
+                <div class = 'col-1-of-4' ng-repeat='card in vm.cardsMajors.slice(4*$index, 4*$index+4);'>
                     <div class = 'card'>
                         <div class = 'card__side card__side--front'>
                             <div class = 'card__picture card__picture--{{card.title}} '>
@@ -73,14 +56,111 @@
                 <a href='#' class='btn btn--green'>Back to Up</a>
             </div>
         </section>
+
         <section class = 'section-tarots' id='section-wand'>
             <div class = 'u-center-text u-margin-bottom-big'>
                 <h2 class = 'heading-secondary'>
                     wands
                 </h2>
             </div>
-            <div class = 'row' ng-repeat = 'k in vm.range(vm.rowArrayLen) track by $index'>
-                <div class = 'col-1-of-4' ng-repeat='card in vm.cards.slice(4*$index, 4*$index+4);'>
+            <div class = 'row' ng-repeat = 'k in vm.range(vm.rowOtherArrayLen) track by $index'>
+                <div class = 'col-1-of-4' ng-repeat='card in vm.cardsWands.slice(4*$index, 4*$index+4);'>
+                    <div class = 'card'>
+                        <div class = 'card__side card__side--front'>
+                            <div class = 'card__picture card__picture--{{card.title}} '>
+                                &nbsp;
+                            </div>
+                            <h4 class = 'card__heading'>
+                                <span class = 'card__heading-span card__heading-span--{{$index + 1}}'>
+                                    {{card.name}}
+                                </span>
+                            </h4>
+                        </div>
+                        <div class = 'card__side card__side--back card__side--back-{{$index + 1}}'>
+                            <div class = 'card__picture card__picture--{{card.title}}--back'>
+                                &nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = 'u-center-text u-margin-top-huge'>
+                <a href='#' class='btn btn--green'>Back to Up</a>
+            </div>
+        </section>
+
+        <section class = 'section-tarots' id='section-cup'>
+            <div class = 'u-center-text u-margin-bottom-big'>
+                <h2 class = 'heading-secondary'>
+                    cup
+                </h2>
+            </div>
+            <div class = 'row' ng-repeat = 'k in vm.range(vm.rowOtherArrayLen) track by $index'>
+                <div class = 'col-1-of-4' ng-repeat='card in vm.cardsCups.slice(4*$index, 4*$index+4);'>
+                    <div class = 'card'>
+                        <div class = 'card__side card__side--front'>
+                            <div class = 'card__picture card__picture--{{card.title}} '>
+                                &nbsp;
+                            </div>
+                            <h4 class = 'card__heading'>
+                                <span class = 'card__heading-span card__heading-span--{{$index + 1}}'>
+                                    {{card.name}}
+                                </span>
+                            </h4>
+                        </div>
+                        <div class = 'card__side card__side--back card__side--back-{{$index + 1}}'>
+                            <div class = 'card__picture card__picture--{{card.title}}--back'>
+                                &nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = 'u-center-text u-margin-top-huge'>
+                <a href='#' class='btn btn--green'>Back to Up</a>
+            </div>
+        </section>
+
+        <section class = 'section-tarots' id='section-sword'>
+            <div class = 'u-center-text u-margin-bottom-big'>
+                <h2 class = 'heading-secondary'>
+                    sword
+                </h2>
+            </div>
+            <div class = 'row' ng-repeat = 'k in vm.range(vm.rowOtherArrayLen) track by $index'>
+                <div class = 'col-1-of-4' ng-repeat='card in vm.cardsSwords.slice(4*$index, 4*$index+4);'>
+                    <div class = 'card'>
+                        <div class = 'card__side card__side--front'>
+                            <div class = 'card__picture card__picture--{{card.title}} '>
+                                &nbsp;
+                            </div>
+                            <h4 class = 'card__heading'>
+                                <span class = 'card__heading-span card__heading-span--{{$index + 1}}'>
+                                    {{card.name}}
+                                </span>
+                            </h4>
+                        </div>
+                        <div class = 'card__side card__side--back card__side--back-{{$index + 1}}'>
+                            <div class = 'card__picture card__picture--{{card.title}}--back'>
+                                &nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = 'u-center-text u-margin-top-huge'>
+                <a href='#' class='btn btn--green'>Back to Up</a>
+            </div>
+        </section>
+
+        <section class = 'section-tarots' id='section-pentacles'>
+            <div class = 'u-center-text u-margin-bottom-big'>
+                <h2 class = 'heading-secondary'>
+                    pentacles
+                </h2>
+            </div>
+            <div class = 'row' ng-repeat = 'k in vm.range(vm.rowOtherArrayLen) track by $index'>
+                <div class = 'col-1-of-4' ng-repeat='card in vm.cardsPentacless.slice(4*$index, 4*$index+4);'>
                     <div class = 'card'>
                         <div class = 'card__side card__side--front'>
                             <div class = 'card__picture card__picture--{{card.title}} '>
@@ -105,7 +185,12 @@
             </div>
         </section>
         <script>
-            var clientCard = <%- JSON.stringify(serverCard)%>;
+            var clientCardMajors = <%- JSON.stringify(serverCardMajors)%>;
+            var clientCardWands = <%- JSON.stringify(serverCardWands)%>;
+            var clientCardCups = <%- JSON.stringify(serverCardCups)%>;
+            var clientCardSwords = <%- JSON.stringify(serverCardSwords)%>;
+            var clientCardPentacless = <%- JSON.stringify(serverCardPentacless)%>;
+            var clientCardTypes = <%- JSON.stringify(serverCardTypes)%>;
         </script>
         <script src='/assets/js/tarot.js'></script>
         <section>

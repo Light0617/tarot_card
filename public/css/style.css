@@ -333,6 +333,230 @@ body {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/assets/img/World.jpg"); }
       .card__picture--World--back {
         background-image: url("/assets/img/World.jpg"); }
+    .card__picture--AceWands {
+      background-image: linear-gradient(to right bottom, #f5ccff, #8f00b3), url("/assets/img/Wands/1.jpg"); }
+      .card__picture--AceWands--back {
+        background-image: url("/assets/img/Wands/1.jpg"); }
+    .card__picture--2Wands {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/assets/img/Wands/2.jpg"); }
+      .card__picture--2Wands--back {
+        background-image: url("/assets/img/Wands/2.jpg"); }
+    .card__picture--3Wands {
+      background-image: linear-gradient(to right bottom, #ccf5ff, #00b8e6), url("/assets/img/Wands/3.jpg"); }
+      .card__picture--3Wands--back {
+        background-image: url("/assets/img/Wands/3.jpg"); }
+    .card__picture--4Wands {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("/assets/img/Wands/4.jpg"); }
+      .card__picture--4Wands--back {
+        background-image: url("/assets/img/Wands/4.jpg"); }
+    .card__picture--5Wands {
+      background-image: linear-gradient(to right bottom, #f5ccff, #8f00b3), url("/assets/img/Wands/5.jpg"); }
+      .card__picture--5Wands--back {
+        background-image: url("/assets/img/Wands/5.jpg"); }
+    .card__picture--6Wands {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/assets/img/Wands/6.jpg"); }
+      .card__picture--6Wands--back {
+        background-image: url("/assets/img/Wands/6.jpg"); }
+    .card__picture--7Wands {
+      background-image: linear-gradient(to right bottom, #ccf5ff, #00b8e6), url("/assets/img/Wands/7.jpg"); }
+      .card__picture--7Wands--back {
+        background-image: url("/assets/img/Wands/7.jpg"); }
+    .card__picture--8Wands {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("/assets/img/Wands/8.jpg"); }
+      .card__picture--8Wands--back {
+        background-image: url("/assets/img/Wands/8.jpg"); }
+    .card__picture--9Wands {
+      background-image: linear-gradient(to right bottom, #f5ccff, #8f00b3), url("/assets/img/Wands/9.jpg"); }
+      .card__picture--9Wands--back {
+        background-image: url("/assets/img/Wands/9.jpg"); }
+    .card__picture--10Wands {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/assets/img/Wands/10.jpg"); }
+      .card__picture--10Wands--back {
+        background-image: url("/assets/img/Wands/10.jpg"); }
+    .card__picture--11Wands {
+      background-image: linear-gradient(to right bottom, #ccf5ff, #00b8e6), url("/assets/img/Wands/11.jpg"); }
+      .card__picture--11Wands--back {
+        background-image: url("/assets/img/Wands/11.jpg"); }
+    .card__picture--12Wands {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("/assets/img/Wands/12.jpg"); }
+      .card__picture--12Wands--back {
+        background-image: url("/assets/img/Wands/12.jpg"); }
+    .card__picture--13Wands {
+      background-image: linear-gradient(to right bottom, #f5ccff, #8f00b3), url("/assets/img/Wands/13.jpg"); }
+      .card__picture--13Wands--back {
+        background-image: url("/assets/img/Wands/13.jpg"); }
+    .card__picture--14Wands {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/assets/img/Wands/14.jpg"); }
+      .card__picture--14Wands--back {
+        background-image: url("/assets/img/Wands/14.jpg"); }
+    .card__picture--AceCups {
+      background-image: linear-gradient(to right bottom, #f5ccff, #8f00b3), url("/assets/img/Cups/1.jpg"); }
+      .card__picture--AceCups--back {
+        background-image: url("/assets/img/Cups/1.jpg"); }
+    .card__picture--2Cups {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/assets/img/Cups/2.jpg"); }
+      .card__picture--2Cups--back {
+        background-image: url("/assets/img/Cups/2.jpg"); }
+    .card__picture--3Cups {
+      background-image: linear-gradient(to right bottom, #ccf5ff, #00b8e6), url("/assets/img/Cups/3.jpg"); }
+      .card__picture--3Cups--back {
+        background-image: url("/assets/img/Cups/3.jpg"); }
+    .card__picture--4Cups {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("/assets/img/Cups/4.jpg"); }
+      .card__picture--4Cups--back {
+        background-image: url("/assets/img/Cups/4.jpg"); }
+    .card__picture--5Cups {
+      background-image: linear-gradient(to right bottom, #f5ccff, #8f00b3), url("/assets/img/Cups/5.jpg"); }
+      .card__picture--5Cups--back {
+        background-image: url("/assets/img/Cups/5.jpg"); }
+    .card__picture--6Cups {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/assets/img/Cups/6.jpg"); }
+      .card__picture--6Cups--back {
+        background-image: url("/assets/img/Cups/6.jpg"); }
+    .card__picture--7Cups {
+      background-image: linear-gradient(to right bottom, #ccf5ff, #00b8e6), url("/assets/img/Cups/7.jpg"); }
+      .card__picture--7Cups--back {
+        background-image: url("/assets/img/Cups/7.jpg"); }
+    .card__picture--8Cups {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("/assets/img/Cups/8.jpg"); }
+      .card__picture--8Cups--back {
+        background-image: url("/assets/img/Cups/8.jpg"); }
+    .card__picture--9Cups {
+      background-image: linear-gradient(to right bottom, #f5ccff, #8f00b3), url("/assets/img/Cups/9.jpg"); }
+      .card__picture--9Cups--back {
+        background-image: url("/assets/img/Cups/9.jpg"); }
+    .card__picture--10Cups {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/assets/img/Cups/10.jpg"); }
+      .card__picture--10Cups--back {
+        background-image: url("/assets/img/Cups/10.jpg"); }
+    .card__picture--11Cups {
+      background-image: linear-gradient(to right bottom, #ccf5ff, #00b8e6), url("/assets/img/Cups/11.jpg"); }
+      .card__picture--11Cups--back {
+        background-image: url("/assets/img/Cups/11.jpg"); }
+    .card__picture--12Cups {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("/assets/img/Cups/12.jpg"); }
+      .card__picture--12Cups--back {
+        background-image: url("/assets/img/Cups/12.jpg"); }
+    .card__picture--13Cups {
+      background-image: linear-gradient(to right bottom, #f5ccff, #8f00b3), url("/assets/img/Cups/13.jpg"); }
+      .card__picture--13Cups--back {
+        background-image: url("/assets/img/Cups/13.jpg"); }
+    .card__picture--14Cups {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/assets/img/Cups/14.jpg"); }
+      .card__picture--14Cups--back {
+        background-image: url("/assets/img/Cups/14.jpg"); }
+    .card__picture--AceSwords {
+      background-image: linear-gradient(to right bottom, #f5ccff, #8f00b3), url("/assets/img/Swords/1.jpg"); }
+      .card__picture--AceSwords--back {
+        background-image: url("/assets/img/Swords/1.jpg"); }
+    .card__picture--2Swords {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/assets/img/Swords/2.jpg"); }
+      .card__picture--2Swords--back {
+        background-image: url("/assets/img/Swords/2.jpg"); }
+    .card__picture--3Swords {
+      background-image: linear-gradient(to right bottom, #ccf5ff, #00b8e6), url("/assets/img/Swords/3.jpg"); }
+      .card__picture--3Swords--back {
+        background-image: url("/assets/img/Swords/3.jpg"); }
+    .card__picture--4Swords {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("/assets/img/Swords/4.jpg"); }
+      .card__picture--4Swords--back {
+        background-image: url("/assets/img/Swords/4.jpg"); }
+    .card__picture--5Swords {
+      background-image: linear-gradient(to right bottom, #f5ccff, #8f00b3), url("/assets/img/Swords/5.jpg"); }
+      .card__picture--5Swords--back {
+        background-image: url("/assets/img/Swords/5.jpg"); }
+    .card__picture--6Swords {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/assets/img/Swords/6.jpg"); }
+      .card__picture--6Swords--back {
+        background-image: url("/assets/img/Swords/6.jpg"); }
+    .card__picture--7Swords {
+      background-image: linear-gradient(to right bottom, #ccf5ff, #00b8e6), url("/assets/img/Swords/7.jpg"); }
+      .card__picture--7Swords--back {
+        background-image: url("/assets/img/Swords/7.jpg"); }
+    .card__picture--8Swords {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("/assets/img/Swords/8.jpg"); }
+      .card__picture--8Swords--back {
+        background-image: url("/assets/img/Swords/8.jpg"); }
+    .card__picture--9Swords {
+      background-image: linear-gradient(to right bottom, #f5ccff, #8f00b3), url("/assets/img/Swords/9.jpg"); }
+      .card__picture--9Swords--back {
+        background-image: url("/assets/img/Swords/9.jpg"); }
+    .card__picture--10Swords {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/assets/img/Swords/10.jpg"); }
+      .card__picture--10Swords--back {
+        background-image: url("/assets/img/Swords/10.jpg"); }
+    .card__picture--11Swords {
+      background-image: linear-gradient(to right bottom, #ccf5ff, #00b8e6), url("/assets/img/Swords/11.jpg"); }
+      .card__picture--11Swords--back {
+        background-image: url("/assets/img/Swords/11.jpg"); }
+    .card__picture--12Swords {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("/assets/img/Swords/12.jpg"); }
+      .card__picture--12Swords--back {
+        background-image: url("/assets/img/Swords/12.jpg"); }
+    .card__picture--13Swords {
+      background-image: linear-gradient(to right bottom, #f5ccff, #8f00b3), url("/assets/img/Swords/13.jpg"); }
+      .card__picture--13Swords--back {
+        background-image: url("/assets/img/Swords/13.jpg"); }
+    .card__picture--14Swords {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/assets/img/Swords/14.jpg"); }
+      .card__picture--14Swords--back {
+        background-image: url("/assets/img/Swords/14.jpg"); }
+    .card__picture--AcePentacless {
+      background-image: linear-gradient(to right bottom, #f5ccff, #8f00b3), url("/assets/img/Pentacless/1.jpg"); }
+      .card__picture--AcePentacless--back {
+        background-image: url("/assets/img/Pentacless/1.jpg"); }
+    .card__picture--2Pentacless {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/assets/img/Pentacless/2.jpg"); }
+      .card__picture--2Pentacless--back {
+        background-image: url("/assets/img/Pentacless/2.jpg"); }
+    .card__picture--3Pentacless {
+      background-image: linear-gradient(to right bottom, #ccf5ff, #00b8e6), url("/assets/img/Pentacless/3.jpg"); }
+      .card__picture--3Pentacless--back {
+        background-image: url("/assets/img/Pentacless/3.jpg"); }
+    .card__picture--4Pentacless {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("/assets/img/Pentacless/4.jpg"); }
+      .card__picture--4Pentacless--back {
+        background-image: url("/assets/img/Pentacless/4.jpg"); }
+    .card__picture--5Pentacless {
+      background-image: linear-gradient(to right bottom, #f5ccff, #8f00b3), url("/assets/img/Pentacless/5.jpg"); }
+      .card__picture--5Pentacless--back {
+        background-image: url("/assets/img/Pentacless/5.jpg"); }
+    .card__picture--6Pentacless {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/assets/img/Pentacless/6.jpg"); }
+      .card__picture--6Pentacless--back {
+        background-image: url("/assets/img/Pentacless/6.jpg"); }
+    .card__picture--7Pentacless {
+      background-image: linear-gradient(to right bottom, #ccf5ff, #00b8e6), url("/assets/img/Pentacless/7.jpg"); }
+      .card__picture--7Pentacless--back {
+        background-image: url("/assets/img/Pentacless/7.jpg"); }
+    .card__picture--8Pentacless {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("/assets/img/Pentacless/8.jpg"); }
+      .card__picture--8Pentacless--back {
+        background-image: url("/assets/img/Pentacless/8.jpg"); }
+    .card__picture--9Pentacless {
+      background-image: linear-gradient(to right bottom, #f5ccff, #8f00b3), url("/assets/img/Pentacless/9.jpg"); }
+      .card__picture--9Pentacless--back {
+        background-image: url("/assets/img/Pentacless/9.jpg"); }
+    .card__picture--10Pentacless {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/assets/img/Pentacless/10.jpg"); }
+      .card__picture--10Pentacless--back {
+        background-image: url("/assets/img/Pentacless/10.jpg"); }
+    .card__picture--11Pentacless {
+      background-image: linear-gradient(to right bottom, #ccf5ff, #00b8e6), url("/assets/img/Pentacless/11.jpg"); }
+      .card__picture--11Pentacless--back {
+        background-image: url("/assets/img/Pentacless/11.jpg"); }
+    .card__picture--12Pentacless {
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("/assets/img/Pentacless/12.jpg"); }
+      .card__picture--12Pentacless--back {
+        background-image: url("/assets/img/Pentacless/12.jpg"); }
+    .card__picture--13Pentacless {
+      background-image: linear-gradient(to right bottom, #f5ccff, #8f00b3), url("/assets/img/Pentacless/13.jpg"); }
+      .card__picture--13Pentacless--back {
+        background-image: url("/assets/img/Pentacless/13.jpg"); }
+    .card__picture--14Pentacless {
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("/assets/img/Pentacless/14.jpg"); }
+      .card__picture--14Pentacless--back {
+        background-image: url("/assets/img/Pentacless/14.jpg"); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 500;
