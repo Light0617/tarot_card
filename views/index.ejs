@@ -1,7 +1,6 @@
 <html ng-app = 'myApp'>
     <head></head>
-    <link href ="/assets/css/style.css" type="text/css"
-        rel="stylesheet"/>
+    <link href ="/assets/css/style.css" type="text/css" rel="stylesheet"/>
     <script src='https://code.jquery.com/jquery-1.11.3.min.js'/></script>
     <script src = 'https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js'>
     </script>
@@ -17,63 +16,103 @@
         </header>
         <section class = 'section-features'>
             <div class = 'row'>
-                <div class = 'col-1-of-4'>
-                    <div class = 'feature-box'>
-                        <a href = '#section-major-tarots' class = 'btn--white heading-tertiary u-margin-bottom-small'> WANDS </h3>
+                <div class = 'col-1-of-4' onclick="window.location = '#section-wand'">
+                    <div class = 'feature-box' >
+                        <img src="/assets/img/main/wand.svg" width='50%'/>
+                        <h3 class = 'heading-tertiary u-margin-bottom-small'> wand </h3>
                     </div>
                 </div>
                 <div class = 'col-1-of-4'>
-                    <div class = 'feature-box'>
-                        <a href = '#section-major-tarots' class = 'btn--white heading-tertiary u-margin-bottom-small'> CUPS </h3>
+                    <div class = 'feature-box' onclick="window.location = '#section-cup'">
+                        <img src="/assets/img/main/cup.svg" width='50%'/>
+                        <h3 class = 'heading-tertiary u-margin-bottom-small'> cup </h3>
                     </div>
                 </div>
                 <div class = 'col-1-of-4'>
-                    <div class = 'feature-box'>
-                        <a href = '#section-major-tarots' class = 'btn--white heading-tertiary u-margin-bottom-small'> SWORDS </h3>
+                    <div class = 'feature-box' onclick="window.location = '#section-sword'">
+                        <img src="/assets/img/main/sword.svg" width='50%'/>
+                        <h3 class = 'heading-tertiary u-margin-bottom-small'> sword </h3>
                     </div>
                 </div>
                 <div class = 'col-1-of-4'>
-                    <div class = 'feature-box'>
-                        <a href = '#section-major-tarots' class = 'btn--white heading-tertiary u-margin-bottom-small'> COINS </h3>
+                    <div class = 'feature-box' onclick="window.location = '#section-coin'">
+                        <img src="/assets/img/main/coins.svg" width='50%'/>
+                        <h3 class = 'heading-tertiary u-margin-bottom-small'> coin </h3>
                     </div>
                 </div>
             </div>
         </section>
-        <section class = 'section-major-tarots' id='section-major-tarots'>
-                <div class = 'u-center-text u-margin-bottom-big'>
-                    <h2 class = 'heading-secondary'>
-                        MAJOR ARCANA
-                    </h2>
-                </div>
-                <div class = 'row' ng-repeat = 'k in vm.range(vm.rowArrayLen) track by $index'>
-                    <div class = 'col-1-of-4' ng-repeat='card in vm.cards.slice(4*$index, 4*$index+4);'>
-                        <div class = 'card'>
-                            <div class = 'card__side card__side--front'>
-                                <div class = 'card__picture card__picture--{{card.title}} '>
-                                    &nbsp;
-                                </div>
-                                <h4 class = 'card__heading'>
-                                    <span class = 'card__heading-span card__heading-span--{{$index + 1}}'>
-                                        {{card.name}}
-                                    </span>
-                                </h4>
+        <section class = 'section-tarots' id='section-major-tarots'>
+            <div class = 'u-center-text u-margin-bottom-big'>
+                <h2 class = 'heading-secondary'>
+                    MAJOR ARCANA
+                </h2>
+            </div>
+            <div class = 'row' ng-repeat = 'k in vm.range(vm.rowArrayLen) track by $index'>
+                <div class = 'col-1-of-4' ng-repeat='card in vm.cards.slice(4*$index, 4*$index+4);'>
+                    <div class = 'card'>
+                        <div class = 'card__side card__side--front'>
+                            <div class = 'card__picture card__picture--{{card.title}} '>
+                                &nbsp;
                             </div>
-                            <div class = 'card__side card__side--back card__side--back-{{$index + 1}}'>
-                                <div class = 'card__picture card__picture--{{card.title}}--back'>
-                                    &nbsp;
-                                </div>
+                            <h4 class = 'card__heading'>
+                                <span class = 'card__heading-span card__heading-span--{{$index + 1}}'>
+                                    {{card.name}}
+                                </span>
+                            </h4>
+                        </div>
+                        <div class = 'card__side card__side--back card__side--back-{{$index + 1}}'>
+                            <div class = 'card__picture card__picture--{{card.title}}--back'>
+                                &nbsp;
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class = 'u-center-text u-margin-top-huge'>
-                    <a href='#' class='btn btn--green'>Dicover all cards</a>
+            </div>
+            <div class = 'u-center-text u-margin-top-huge'>
+                <a href='#' class='btn btn--green'>Back to Up</a>
+            </div>
+        </section>
+        <section class = 'section-tarots' id='section-wand'>
+            <div class = 'u-center-text u-margin-bottom-big'>
+                <h2 class = 'heading-secondary'>
+                    wands
+                </h2>
+            </div>
+            <div class = 'row' ng-repeat = 'k in vm.range(vm.rowArrayLen) track by $index'>
+                <div class = 'col-1-of-4' ng-repeat='card in vm.cards.slice(4*$index, 4*$index+4);'>
+                    <div class = 'card'>
+                        <div class = 'card__side card__side--front'>
+                            <div class = 'card__picture card__picture--{{card.title}} '>
+                                &nbsp;
+                            </div>
+                            <h4 class = 'card__heading'>
+                                <span class = 'card__heading-span card__heading-span--{{$index + 1}}'>
+                                    {{card.name}}
+                                </span>
+                            </h4>
+                        </div>
+                        <div class = 'card__side card__side--back card__side--back-{{$index + 1}}'>
+                            <div class = 'card__picture card__picture--{{card.title}}--back'>
+                                &nbsp;
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
+            <div class = 'u-center-text u-margin-top-huge'>
+                <a href='#' class='btn btn--green'>Back to Up</a>
+            </div>
+        </section>
         <script>
             var clientCard = <%- JSON.stringify(serverCard)%>;
         </script>
         <script src='/assets/js/tarot.js'></script>
+        <section>
+            <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+            <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        </section>
     </body>
 </html>
