@@ -19,7 +19,7 @@ module.exports = function(app){
                         if(err) throw err;
                         Tarots.find({'type' : 'pentacles'}).sort('card_id').exec(function(err, CardPentacless){
                             if(err) throw err;
-                            cardTypes = ['MAJOR ARCANA', 'wand', 'cup', 'sword', 'pentacles'];
+                            cardTypes = ['MAJOR ARCANA', 'wands', 'cups', 'swords', 'pentacles'];
                             res.render('index', {
                                                 serverCardMajors : CardMajors,
                                                 serverCardWands: CardWands,
