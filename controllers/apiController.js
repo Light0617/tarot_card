@@ -17,16 +17,15 @@ module.exports = function(app){
                     if(err) throw err;
                     Tarots.find({'type' : 'sword'}).sort('card_id').exec(function(err, CardSwords){
                         if(err) throw err;
-                        Tarots.find({'type' : 'pentacles'}).sort('card_id').exec(function(err, CardPentacless){
+                        Tarots.find({'type' : 'pentacle'}).sort('card_id').exec(function(err, CardPentacles){
                             if(err) throw err;
-                            cardTypes = ['MAJOR ARCANA', 'wands', 'cups', 'swords', 'pentacles'];
                             res.render('index', {
-                                                serverCardMajors : CardMajors,
-                                                serverCardWands: CardWands,
-                                                serverCardCups: CardCups,
-                                                serverCardSwords: CardSwords,
-                                                serverCardPentacless: CardPentacless,
-                                                serverCardTypes: cardTypes});
+                                                serverCards : { 'majors': CardMajors,
+                                                                'wands':CardWands,
+                                                                'cups':CardCups ,
+                                                                'swords':CardSwords,
+                                                                'pentacles' : CardPentacles}
+                                                });
                         });
                     });
                 });
